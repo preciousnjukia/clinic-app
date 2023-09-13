@@ -63,4 +63,4 @@ const FeedBack = () => {
   );
 };
 
-export default Feedback;
+export default FeedBack;
