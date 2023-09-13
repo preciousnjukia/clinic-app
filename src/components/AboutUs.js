@@ -5,7 +5,7 @@ function AboutUs (){
     <div className="about-us">
       <h2>About the App</h2>
       <p>
-        Welcome to our clinic app! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Welcome to our clinic app! 
         Our app is designed to provide convenient and accessible healthcare services to you.
       </p>
       <p>
