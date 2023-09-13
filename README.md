@@ -30,6 +30,7 @@ To get started with the Clinic App, follow these steps:
 
 2. Install dependencies
 
+    ```bash
     cd clinic-app
     npm install
 
