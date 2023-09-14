@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Branice Munyas",
+      "specialty": "Dental Surgeon",
+      "availability": "Monday, Wednesday",
+      "location": "Nextcare Dental Studio",
+      "consultationFee": "Ksh1000"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Deepak Kumar Gupta",
+      "specialty": "Ophthalmologist",
+      "availability": "Tuesday, Thursday",
+      "location": "Lions Sightfirst Eye Hospital",
+      "consultationFee": "Ksh800"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Peter Ogutu",
+      "specialty": "Cardiothoracic Surgeon",
+      "availability": "Monday, Friday",
+      "location": "The Agha Khan University Hospital",
+      "consultationFee": "Ksh900"
+    }
+  ]
+  

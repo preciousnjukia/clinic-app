@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import AboutUs from "./AboutUs";
 import Login from "./Login";
 import Signup from "./Signup";
-import BookingAppointment from "./BookAppointment";
+import BookAppointment from "./BookAppointment";
 
 
 function App(){
@@ -17,14 +17,17 @@ function App(){
        <NavBar />
        <DoctorsSection />
       <Switch>
-        <Route path="/navbar" exact component={NavBar} />
-        <Route path="/doctorssection" exact component={DoctorsSection} />
-        <Route path="/feedback" exact component={FeedBack} />
-        <Route path="/footer" exact component={Footer} />
-        <Route path="/aboutus" exact component={AboutUs} />
-        <Route path="/login" exact component={Login} />
-        <Route path="/signup" exact component={Signup} />
-        <Route path="/bookingappointment" exact component={BookingAppointment} />
+      <Route path="/doctorssection" exact component={DoctorsSection} />
+          <Route path="/feedback" exact component={FeedBack} />
+          <Route path="/footer" exact component={Footer} />
+          <Route path="/aboutus" exact component={AboutUs} />
+          <Route path="/login" exact component={Login} />
+          <Route path="/signup" exact component={Signup} />
+          <Route
+            path="/bookingappointment"
+            exact
+            component={BookAppointment}
+          />
       </Switch>
       <FeedBack />
       <Footer />

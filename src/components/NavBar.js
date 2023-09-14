@@ -1,11 +1,22 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import './NavBar.css';
+import OnlineConsult from "./OnlineConsult";
 
-function NavBar(){
-    return (
+function NavBar() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  return (
     <nav className="navbar">
-     <h1>Clinic App</h1>
+      <h1>Clinic App</h1>
       <ul className="navbar-menu">
         <li>
           <NavLink to="/book-appointment">Book Appointment</NavLink>
@@ -20,9 +31,13 @@ function NavBar(){
           <NavLink to="/sign-up">Sign Up</NavLink>
         </li>
       </ul>
-      <button className="consult-button">Consult Online</button>
+      <button className="consult-button" onClick={openModal}>
+        Consult Online
+      </button>
+
+      {isModalOpen && <OnlineConsult onClose={closeModal} />}
     </nav>
   );
-
 }
+
 export default NavBar;
