@@ -19,7 +19,7 @@ function Signup () {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const { username, email, password } = userRegistrationData;
+    const { username, email, password } = formData;
 
     const newUser = {
         username,
