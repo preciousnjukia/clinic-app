@@ -24,7 +24,7 @@ function Login() {
         password,
       };
 
-      fetch("/src/user.json", {
+      fetch("/src/users.json", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
