@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./BookingAppointment.css";
 
 function BookingAppointment() {
   const [appointmentData, setAppointmentData] = useState({
