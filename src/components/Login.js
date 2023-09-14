@@ -5,6 +5,7 @@ function Login() {
   const [loginData, setLoginData] = useState({
     email: "",
     password: "",
+    username: "",
   });
 
   const handleInputChange = (event) => {
@@ -18,9 +19,10 @@ function Login() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const { email, password } = loginData;
+    const { username, email, password,} = loginData;
 
     const userCredentials = {
+        username,
         email,
         password,
       };
@@ -48,6 +50,16 @@ function Login() {
         <div>
           <h2>Login</h2>
           <form onSubmit={handleSubmit}>
+          <div>
+              <label>Username:</label>
+              <input
+                type="username"
+                name="username"
+                value={loginData.username}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
             <div>
               <label>Email:</label>
               <input

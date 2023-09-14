@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./NavBar";
 import DoctorsSection from "./DoctorsSection";
 import FeedBack from "./FeedBack";
@@ -9,32 +9,26 @@ import Login from "./Login";
 import Signup from "./Signup";
 import BookAppointment from "./BookAppointment";
 
-
-function App(){
+function App() {
   return (
     <Router>
       <div>
-       <NavBar />
-       <DoctorsSection />
-      <Switch>
-      <Route path="/doctorssection" exact component={DoctorsSection} />
-          <Route path="/feedback" exact component={FeedBack} />
-          <Route path="/footer" exact component={Footer} />
-          <Route path="/aboutus" exact component={AboutUs} />
-          <Route path="/login" exact component={Login} />
-          <Route path="/signup" exact component={Signup} />
-          <Route
-            path="/bookingappointment"
-            exact
-            component={BookAppointment}
-          />
-      </Switch>
-      <FeedBack />
-      <Footer />
+        <NavBar />
+        <DoctorsSection />
+        <Routes>
+          <Route path="/doctorssection" element={<DoctorsSection />} />
+          <Route path="/feedback" element={<FeedBack />} />
+          <Route path="/footer" element={<Footer />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/sign-up" element={<Signup />} />
+          <Route path="/book-appointment" element={<BookAppointment />} />
+        </Routes>
+        <FeedBack />
+        <Footer />
       </div>
     </Router>
   );
 }
-
 
 export default App;

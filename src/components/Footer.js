@@ -1,4 +1,5 @@
 import React from 'react';
+import { ShareButtons } from 'react-share';
 import "./Footer.css";
 import { TwitterShareButton, TwitterIcon } from 'react-share';
 import { FacebookShareButton, FacebookIcon } from 'react-share';
@@ -49,18 +50,17 @@ function Footer() {
                     <div className = "col">
                         <h4 className =  "header">Follow us</h4>
                         <FacebookShareButton url={'https://www.example.com'}>
-                        
-                       <FacebookIcon size={28} round />
-                       </FacebookShareButton>
+                          <FacebookIcon size={28} round />
+                        </FacebookShareButton>
 
-                      <TwitterShareButton url={'https://www.example.com'}>
-                       <TwitterIcon size={28} round />
-                       </TwitterShareButton>
-                       
-                       
-                       <LinkedinShareButton url={'https://www.example.com'}>
-                       <LinkedinIcon size={28} round />
-                       </LinkedinShareButton>
+                        <TwitterShareButton url={'https://www.example.com'}>
+                          <TwitterIcon size={28} round />
+                        </TwitterShareButton>
+
+                        <LinkedinShareButton url={'https://www.example.com'}>
+                          <LinkedinIcon size={28} round />
+                        </LinkedinShareButton>                        
+                      
                         
                     </div>
                 </div>
