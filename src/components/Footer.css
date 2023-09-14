@@ -1,0 +1,60 @@
+.main-footer {
+    color: rgb(17, 16, 16);
+    background-color: rgb(212, 212, 237);
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .col {
+    float: left;
+    width: 20%;
+    text-decoration: none;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .col-sm {
+    text-align: center;
+  }
+
+  .header {
+
+    color: rgb(32, 32, 93) ;
+
+  }
+  .list-unstyled {
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 0;
+    text-decoration: none;
+
+  }
+  .header {
+    margin-top: 0;
+    margin-bottom:  12px;
+    font-size: 13px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+  }
+   .a {
+    text-decoration: none;
+    transition: 0.3s;
+
+  }
+  .a:hover{
+    opacity: 0.8;
+    color:rgb(186, 153, 91);
+  }
+
+  
+
