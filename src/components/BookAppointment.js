@@ -7,24 +7,23 @@ function BookAppointment() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/src/consultation.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setDoctors(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-
-        console.error("Error fetching data:", error);
-        setError(error);
-        setLoading(false);
-      });
-  }, []);
+    fetch(`${process.env.PUBLIC_URL}/consultation.json`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      setDoctors(data);
+      setLoading(false);
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+      setError(error);
+      setLoading(false);
+    });
+}, []);
 
   if (loading) {
     return <div>Loading...</div>;
