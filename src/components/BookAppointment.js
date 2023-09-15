@@ -51,6 +51,7 @@ function BookAppointment() {
             </li>
           ))}
         </ul>
+        <button>Book Now</button>
       </div>
     </div>
   );

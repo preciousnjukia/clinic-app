@@ -14,13 +14,13 @@ function Footer()
 
     return (
         <footer className = "main-footer">
-            <h4 className= "header">QUICK LINKS</h4>
+            <h2 className= "header">QUICK LINKS</h2>
             <hr />
             <div className = "container">
                 <div className = "row">
                     {/*column1 */}
-                    <div className = "col">
-                        <h4 className="header">Clinic App Pro</h4>
+                    <div className = "col-p">
+                        <h3 className="header">Clinic App Pro</h3>
                         <p id ="p">Health care refers to the efforts that medical professionals make to restore our physical and
                             mental well being. 
                         </p>
