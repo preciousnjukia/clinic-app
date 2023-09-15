@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./NavBar";
-
+import DoctorsSection from "../DoctorsSection";
 import FeedBack from "./FeedBack";
 import Footer from "./Footer";
 import AboutUs from "./AboutUs";
@@ -20,7 +20,7 @@ function App() {
       <div>
         <NavBar />
         <Routes>
-         
+          <Route path="/doctorssection" element={<DoctorsSection />} />
           <Route path="/feedback" element={<FeedBack />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -29,7 +29,7 @@ function App() {
           <Route path="/book-appointment" element={<BookAppointment />} />
           <Route path="/" element={<Home />} />
         </Routes>
-        
+        <DoctorsSection />
         <FeedBack />
         <Footer />
       </div>
