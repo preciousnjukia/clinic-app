@@ -1,0 +1,82 @@
+/* src/components/DoctorsSection.css */
+
+@keyframes changeBackground {
+  0% {
+    background-image: url('/public/images/doctor-medical-background-24834402.webp');
+  }
+  33% {
+    background-image: url('/public/images/stethoscope-and-smartphone-on-blue-background-app-health-smartphone-mockup-get-an-online-consultation-from-doctor-by-smartphone-doctor-online-consultation-concept-3d-rendering-free-photo.jpg');
+  }
+  66% {
+    background-image: url('/public/images/v870-tang-36_1.jpg');
+  }
+  100% {
+    background-image: url('/public/images/doctor-medical-background-24834402.webp');
+  }
+}
+
+.doctors-section {
+    animation: changeBackground 40s infinite;
+    background-size: cover;
+    padding: 50px;
+    color: white;
+  }
+  
+  h2 {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bolder;
+    color: purple;
+  }
+  
+  .doctors-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  
+  .doctor-profile {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 0 0 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+  }
+  
+  h3 a {
+    color: rgb(41, 33, 33);
+    text-decoration: none;
+  }
+  
+  p {
+    font-size: 14px;
+    color: purple;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: rgb(191, 224, 114);
+  }
+  
+  .view-all-button {
+    text-align: center;
+    margin-top: 20px;
+
+  }
