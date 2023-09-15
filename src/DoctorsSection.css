@@ -2,16 +2,16 @@
 
 @keyframes changeBackground {
   0% {
-    background-image: url('/public/images/doctor-medical-background-24834402.webp');
+    background-image: url('/public/doctors.image/doctor-medical-background-24834402.webp');
   }
   33% {
-    background-image: url('/public/images/stethoscope-and-smartphone-on-blue-background-app-health-smartphone-mockup-get-an-online-consultation-from-doctor-by-smartphone-doctor-online-consultation-concept-3d-rendering-free-photo.jpg');
+    background-image: url('/public/doctors.image/stethoscope-and-smartphone-on-blue-background-app-health-smartphone-mockup-get-an-online-consultation-from-doctor-by-smartphone-doctor-online-consultation-concept-3d-rendering-free-photo.jpg');
   }
   66% {
-    background-image: url('/public/images/v870-tang-36_1.jpg');
+    background-image: url('/public/doctors.image/v870-tang-36_1.jpg');
   }
   100% {
-    background-image: url('/public/images/doctor-medical-background-24834402.webp');
+    background-image: url('/public/doctors.image/doctor-medical-background-24834402.webp');
   }
 }
 
