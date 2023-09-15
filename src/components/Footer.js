@@ -1,5 +1,4 @@
 import React from 'react';
-import { ShareButtons } from 'react-share';
 import "./Footer.css";
 import { TwitterShareButton, TwitterIcon } from 'react-share';
 import { FacebookShareButton, FacebookIcon } from 'react-share';
