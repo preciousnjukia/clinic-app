@@ -19,6 +19,9 @@ function BookAppointment() {
         setLoading(false);
       })
       .catch((error) => {
+
+        console.error("Error fetching data:", error);
+
         setError(error);
         setLoading(false);
       });

@@ -9,12 +9,16 @@ import Login from "./Login";
 import Signup from "./Signup";
 import BookAppointment from "./BookAppointment";
 
+
+function Home() {
+  return <h2>Welcome to our website!</h2>;
+}
+
 function App() {
   return (
     <Router>
       <div>
         <NavBar />
-        <DoctorsSection />
         <Routes>
           <Route path="/doctorssection" element={<DoctorsSection />} />
           <Route path="/feedback" element={<FeedBack />} />
@@ -23,7 +27,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/sign-up" element={<Signup />} />
           <Route path="/book-appointment" element={<BookAppointment />} />
+          <Route path="/" element={<Home />} />
         </Routes>
+        <DoctorsSection />
         <FeedBack />
         <Footer />
       </div>

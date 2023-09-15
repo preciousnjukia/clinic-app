@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Footer.css";
 import { TwitterShareButton, TwitterIcon } from 'react-share';
 import { FacebookShareButton, FacebookIcon } from 'react-share';
