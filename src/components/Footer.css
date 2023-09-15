@@ -1,19 +1,23 @@
 .main-footer {
-    color: rgb(17, 16, 16);
-    background-color: rgb(212, 212, 237);
+    color: #333;
+    font-size:16px;
+    background-color: #f5f5f5;
     background-size: cover;
-    padding: 0px;
-    margin: 0px;
+    padding: 10px 0;
+    margin: 0 auto;
     position: relative;
     bottom: 0;
-    width: 100%;
+    max-width: 1200px;
+    height: 1%;
     text-decoration: none;
+    margin-top: auto;
+    
   }
 
   .col {
     float: left;
     width: 20%;
-    text-decoration: none;
+    
   }
   
   .row:after {
@@ -26,17 +30,12 @@
     text-align: center;
   }
 
-  .header {
-
-    color: rgb(32, 32, 93) ;
-
-  }
   .list-unstyled {
     list-style-type: none;
     line-height: 30px;
     font-size: 15px;
-    margin-bottom: 0;
-    text-decoration: none;
+    padding: 0;
+    margin: 0;
 
   }
   .header {
@@ -45,15 +44,20 @@
     font-size: 13px;
     text-transform:uppercase;
     letter-spacing: 1px;
+    color: rgb(32, 32, 93) ;
   }
    .a {
     text-decoration: none;
     transition: 0.3s;
+    color: rgb(17,16,16)
 
   }
   .a:hover{
     opacity: 0.8;
     color:rgb(186, 153, 91);
+  }
+  #p {
+    color: rgb(17, 16, 16);
   }
 
   
